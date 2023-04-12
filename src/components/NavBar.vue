@@ -19,10 +19,12 @@ watch(index, (newIndex) => {
             <img class="icon" src="../assets/icon.png" />
             <span id="organize" class="navbar-toggler">{{ title }}</span>
 
+            <!-- 螢幕小於 1024 時觸發 -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- 下放選單 -->
             <div class="collapse navbar-collapse nav-underline" id="navDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item" id="page1">

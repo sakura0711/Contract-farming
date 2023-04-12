@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView.vue'
+import AddContract from '@/views/AddContract.vue'
+import CategoryManage from '@/views/CategoryManage.vue'
+import ContractManage from '@/views/ContractManage.vue'
+import InfoManage from '@/views/InfoManage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,6 +14,31 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
+    {
+      path: '/AddContract',
+      name: 'AddContract',
+      component: AddContract
+    },
+    {
+      path: '/CategoryManage',
+      name: 'CategoryManage',
+      component: CategoryManage
+    },
+    {
+      path: '/ContractManage',
+      name: 'ContractManage',
+      component: ContractManage
+    },
+    {
+      path: '/InfoManage',
+      name: 'InfoManage',
+      component: InfoManage
+    },
+    {
+      path: '/AboutView',
+      name: 'AboutView',
+      component: AboutView
+    },
   ]
 })
 
@@ -17,10 +47,6 @@ router.afterEach((to) => {
   // 關閉漢堡選單
   const navbar = document.querySelector('.navbar-collapse')
   navbar.classList.remove('show')
-
-  // // 更改首頁icon名稱
-  // const title = to.meta.title || '首頁'
-  // const navbarBrand = document.querySelector('.navbar-brand')
-  // navbarBrand.innerHTML = title
 })
+
 export default router
