@@ -8,7 +8,7 @@ const title = ref('首頁');
 // 監視 index 變動
 watch(index, (newIndex) => {
     console.log(`Now page is:${newIndex}`);
-    this.title = newIndex;
+    title.value = title_list[newIndex];
 });
 
 </script>
@@ -34,16 +34,16 @@ watch(index, (newIndex) => {
                         <RouterLink to="/categoryManage" @click="index = 1">種類管理</RouterLink>
                     </li>
                     <li class="nav-item" id="page3">
-                        <RouterLink to="/infoMange" @click="index = 2">資料管理</RouterLink>
+                        <RouterLink to="/infoManage" @click="index = 2">資料管理</RouterLink>
                     </li>
                     <li class="nav-item" id="page4">
                         <RouterLink to="/addContract" @click="index = 3">新增合約</RouterLink>
                     </li>
                     <li class="nav-item" id="page5">
-                        <RouterLink to="/contractMange" @click="index = 4">契作合約管理</RouterLink>
+                        <RouterLink to="/contractManage" @click="index = 4">契作合約管理</RouterLink>
                     </li>
                     <li class="nav-item" id="page6">
-                        <RouterLink to="/about" @click="index = 5">更多資訊</RouterLink>
+                        <RouterLink to="/aboutView" @click="index = 5">更多資訊</RouterLink>
                     </li>
                 </ul>
             </div>

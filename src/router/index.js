@@ -9,37 +9,37 @@ import InfoManage from '@/views/InfoManage.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
+    { // 首頁
       path: '/',
       name: 'home',
       component: HomeView
     },
-    {
-      path: '/AddContract',
-      name: 'AddContract',
-      component: AddContract
-    },
-    {
-      path: '/CategoryManage',
+    { // 種類管理
+      path: '/categoryManage',
       name: 'CategoryManage',
       component: CategoryManage
     },
-    {
-      path: '/ContractManage',
-      name: 'ContractManage',
-      component: ContractManage
-    },
-    {
-      path: '/InfoManage',
+    { // 資料管理
+      path: '/infoManage',
       name: 'InfoManage',
       component: InfoManage
     },
-    {
-      path: '/AboutView',
+    { // 新增合約
+      path: '/addContract',
+      name: 'AddContract',
+      component: AddContract
+    },
+    { // 契約管理
+      path: '/contractManage',
+      name: 'ContractManage',
+      component: ContractManage
+    },
+    { // 更多資訊
+      path: '/aboutView',
       name: 'AboutView',
       component: AboutView
     },
-  ]
+  ],
 })
 
 // 切換到不同的 router 後觸發
@@ -48,5 +48,18 @@ router.afterEach((to) => {
   const navbar = document.querySelector('.navbar-collapse')
   navbar.classList.remove('show')
 })
+
+// ERROR 只有 NavBar 成功刷新，RouterView 無法刷新
+// 重新整理時，導向固定頁面(HomeView)
+router.beforeEach((to, from, next) => {
+  // 檢查是否是重新整理頁面
+  if (to.path === from.path) {
+    // 將路由導向到固定路徑
+    router.push('/');
+  } else {
+    // 繼續前往原始路徑
+    next();
+  }
+});
 
 export default router
