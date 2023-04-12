@@ -1,6 +1,11 @@
 // import bootstrap default style
 @import "/node_modules/bootstrap/scss/bootstrap.scss";
 
+// import custom style
+@import "../assets/base.css";
+@import "../assets/main.css";
+
+// import google Font 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // Override style
