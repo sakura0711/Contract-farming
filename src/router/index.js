@@ -1,9 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
+// # home Page ------------------------------------ 
 import HomeView from '@/views/HomeView.vue'
+
+// # about Page -----------------------------------
 import AboutView from '@/views/AboutView.vue'
+
+// # add contract Page ------------------------------------
 import AddContract from '@/views/AddContract.vue'
+import addLand from '@/components/addContract/addLand.vue';
+import addFarmer from '@/components/addContract/addFarmer.vue';
+
+// # category manage Page ------------------------------------
 import CategoryManage from '@/views/CategoryManage.vue'
+
+// # contract manage Page ------------------------------------
 import ContractManage from '@/views/ContractManage.vue'
+
+// # info manage Page ------------------------------------
 import InfoManage from '@/views/InfoManage.vue'
 
 const router = createRouter({
@@ -27,7 +41,17 @@ const router = createRouter({
     { // 新增合約
       path: '/addContract',
       name: 'AddContract',
-      component: AddContract
+      component: AddContract,
+      children: [
+        {
+          path: 'addLand',
+          component: addLand,
+        },
+        {
+          path: 'addFarmer',
+          component: addFarmer,
+        }
+      ],
     },
     { // 契約管理
       path: '/contractManage',
@@ -49,17 +73,17 @@ router.afterEach((to) => {
   navbar.classList.remove('show')
 })
 
-// ERROR 只有 NavBar 成功刷新，RouterView 無法刷新
-// 重新整理時，導向固定頁面(HomeView)
-router.beforeEach((to, from, next) => {
-  // 檢查是否是重新整理頁面
-  if (to.path === from.path) {
-    // 將路由導向到固定路徑
-    router.push('/');
-  } else {
-    // 繼續前往原始路徑
-    next();
-  }
-});
+// // ERROR 只有 NavBar 成功刷新，RouterView 無法刷新
+// // 重新整理時，導向固定頁面(HomeView)
+// router.beforeEach((to, from, next) => {
+//   // 檢查是否是重新整理頁面
+//   if (to.path === from.path) {
+//     // 將路由導向到固定路徑
+//     router.replace({ path: '/' })
+//   } else {
+//     // 繼續前往原始路徑
+//     next();
+//   }
+// });
 
 export default router
