@@ -16,7 +16,7 @@ watch(index, (newIndex) => {
 <template>
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="bootstrap-nav">
-            <img class="icon" src="../assets/icon.png" />
+            <img class="icon" src="@/assets/icon.png" />
             <span id="organize" class="navbar-toggler">{{ title }}</span>
 
             <!-- 螢幕小於 1024 時觸發 -->
@@ -25,8 +25,8 @@ watch(index, (newIndex) => {
             </button>
 
             <!-- 下放選單 -->
-            <div class="collapse navbar-collapse nav-underline" id="navDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navDropdown">
+                <ul class="navbar-nav ">
                     <li class="nav-item" id="page1">
                         <RouterLink to="/" @click="index = 0">首頁</RouterLink>
                     </li>
@@ -57,5 +57,11 @@ watch(index, (newIndex) => {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.nav-item {
+    margin: 0px 10px;
+    padding: 5px 10px;
+    font: 500 16px Sans-Serif;
 }
 </style>
