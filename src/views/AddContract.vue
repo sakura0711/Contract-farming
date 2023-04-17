@@ -12,13 +12,14 @@
             <!-- 點擊切換至 addFarmer(新增農民) -->
             <button @click="$router.push('/addContract/addFarmer')">addFarmer</button>
         </div>
+
     </div>
 </template>
 
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 </script>
 <script>
