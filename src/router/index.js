@@ -73,6 +73,7 @@ router.afterEach((to) => {
   navbar.classList.remove('show')
 })
 
+// fixed : 垃圾 GPT :<
 // // ERROR 只有 NavBar 成功刷新，RouterView 無法刷新
 // // 重新整理時，導向固定頁面(HomeView)
 // router.beforeEach((to, from, next) => {
@@ -86,4 +87,6 @@ router.afterEach((to) => {
 //   }
 // });
 
+
+// 默認導出值
 export default router
