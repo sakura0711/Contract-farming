@@ -1,28 +1,28 @@
 <mxfile host="65bd71144e">
     <diagram id="vYu5x2b9G9xcMUW6bXG7" name="第1頁">
-        <mxGraphModel dx="2275" dy="1264" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2530" dy="1303" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="32" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Georgia;fontSize=20;" parent="1" source="3" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="首頁&lt;br&gt;HomeView.vue" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="3" value="首頁&lt;br&gt;HomeView.vue" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry x="-460" y="405" width="380" height="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="種類管理&lt;br&gt;CategoryManage.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="8" value="種類管理&lt;br&gt;CategoryManage.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry x="70" y="90" width="250" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="37">
+                <mxCell id="43" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24" target="37" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="39">
+                <mxCell id="44" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="46" target="39" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="新增合約&lt;br&gt;AddContract.vue&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="10" value="新增合約&lt;br&gt;AddContract.vue&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="70" y="450" width="250" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="契作合約管理&lt;br&gt;ContractManage.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="11" value="契作合約管理&lt;br&gt;ContractManage.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;arcSize=17;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry x="70" y="630" width="250" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="農作物品種管理" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
@@ -40,10 +40,10 @@
                 <mxCell id="24" value="農地資料管理" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
                     <mxGeometry x="400" y="320" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="更多資訊&lt;br&gt;AboutView.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="25" value="更多資訊&lt;br&gt;AboutView.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" parent="1" vertex="1">
                     <mxGeometry x="70" y="820" width="250" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="資料管理&lt;br&gt;InfoManage.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                <mxCell id="9" value="資料管理&lt;br&gt;InfoManage.vue" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry x="70" y="260" width="250" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Georgia;fontSize=20;" parent="1" source="3" target="9" edge="1">
@@ -70,20 +70,60 @@
                         <mxPoint x="110" y="180" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="41" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="37" target="38">
+                <mxCell id="41" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="37" target="38" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="新增農地" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" vertex="1" parent="1">
-                    <mxGeometry x="400" y="450" width="180" height="40" as="geometry"/>
+                <mxCell id="37" value="新增農地" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="470" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="新增契作合約" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" vertex="1" parent="1">
-                    <mxGeometry x="630" y="450" width="180" height="40" as="geometry"/>
+                <mxCell id="38" value="新增契作合約" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="670" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="42" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="39" target="38">
+                <mxCell id="42" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="39" target="38" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="新增契作農民" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="510" width="180" height="40" as="geometry"/>
+                <mxCell id="39" value="新增契作農民" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="630" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="45" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="660.3333333333333" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="刪除" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="640" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.02;entryY=0.37;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="46" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="46" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="新增" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="585" width="180" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.999;entryY=0.877;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="47" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="契作追蹤" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="740" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="48" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="修改" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Georgia;fontSize=20;size=20;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="690" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="預定移除" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;arcSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="-760" y="70" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="未確認" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;arcSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="-760" y="140" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="已定案" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Georgia;fontSize=20;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;arcSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="-760" y="210" width="140" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
