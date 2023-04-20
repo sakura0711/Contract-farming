@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import { ref, computed, watch } from 'vue';
-const title_list = ['首頁', '種類管理', '資料管理', '新增合約', '契作合約管理', '更多資訊'];
+const title_list = ['首頁', '種類管理', '資料管理', '契作合約管理', '更多資訊'];
 const index = ref(0);
 const title = ref('首頁');
 
@@ -26,7 +26,7 @@ watch(index, (newIndex) => {
 
             <!-- 下放選單 -->
             <div class="collapse navbar-collapse" id="navDropdown">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     <li class="nav-item" id="page1">
                         <RouterLink to="/" @click="index = 0">首頁</RouterLink>
                     </li>
@@ -37,13 +37,10 @@ watch(index, (newIndex) => {
                         <RouterLink to="/infoManage" @click="index = 2">資料管理</RouterLink>
                     </li>
                     <li class="nav-item" id="page4">
-                        <RouterLink to="/addContract" @click="index = 3">新增合約</RouterLink>
+                        <RouterLink to="/contractManage" @click="index = 3">契作合約管理</RouterLink>
                     </li>
                     <li class="nav-item" id="page5">
-                        <RouterLink to="/contractManage" @click="index = 4">契作合約管理</RouterLink>
-                    </li>
-                    <li class="nav-item" id="page6">
-                        <RouterLink to="/aboutView" @click="index = 5">更多資訊</RouterLink>
+                        <RouterLink to="/aboutView" @click="index = 4">更多資訊</RouterLink>
                     </li>
                 </ul>
             </div>
