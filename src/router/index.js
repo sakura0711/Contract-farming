@@ -6,16 +6,16 @@ import HomeView from '@/views/HomeView.vue'
 // # about Page -----------------------------------
 import AboutView from '@/views/AboutView.vue'
 
-// # add contract Page ------------------------------------
-import AddContract from '@/views/AddContract.vue'
-import addLand from '@/components/addContract/addLand.vue';
-import addFarmer from '@/components/addContract/addFarmer.vue';
-
 // # category manage Page ------------------------------------
 import CategoryManage from '@/views/CategoryManage.vue'
 
 // # contract manage Page ------------------------------------
 import ContractManage from '@/views/ContractManage.vue'
+/*---*/import addLand from '@/components/contractManage/addLand.vue';
+/*---*/import addFarmer from '@/components/contractManage/addFarmer.vue';
+/*---*/import delContract from '@/components/contractManage/delContract.vue';
+/*---*/import modContract from '@/components/contractManage/modContract.vue';
+/*---*/import trackContract from '@/components/contractManage/trackContract.vue';
 
 // # info manage Page ------------------------------------
 import InfoManage from '@/views/InfoManage.vue'
@@ -38,10 +38,10 @@ const router = createRouter({
       name: 'InfoManage',
       component: InfoManage
     },
-    { // 新增合約
-      path: '/addContract',
-      name: 'AddContract',
-      component: AddContract,
+    { // 契約管理
+      path: '/contractManage',
+      name: 'ContractManage',
+      component: ContractManage,
       children: [
         {
           path: 'addLand',
@@ -50,13 +50,20 @@ const router = createRouter({
         {
           path: 'addFarmer',
           component: addFarmer,
-        }
+        },
+        {
+          path: 'delContract',
+          component: delContract,
+        },
+        {
+          path: 'modContract',
+          component: modContract,
+        },
+        {
+          path: 'trackContract',
+          component: trackContract,
+        },
       ],
-    },
-    { // 契約管理
-      path: '/contractManage',
-      name: 'ContractManage',
-      component: ContractManage
     },
     { // 更多資訊
       path: '/aboutView',
