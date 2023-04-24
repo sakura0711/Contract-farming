@@ -9,11 +9,12 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="router_content">
         <router-link to="/contractManage/addLand" class="btn btn-primary">新增農地</router-link>
         <router-link to="/contractManage/addFarmer" class="btn btn-primary">新增農民</router-link>
-        <router-link to="/contractManage/delContract" class="btn btn-primary">新增農民</router-link>
-        <router-link to="/contractManage/modContract" class="btn btn-primary">新增農民</router-link>
-        <router-link to="/contractManage/trackContract" class="btn btn-primary">新增農民</router-link>
+        <router-link to="/contractManage/addContract" class="btn btn-primary">新增契約</router-link>
+        <router-link to="/contractManage/delContract" class="btn btn-warning">刪除契約</router-link>
+        <router-link to="/contractManage/modContract" class="btn btn-warning">修改契約</router-link>
+        <router-link to="/contractManage/trackContract" class="btn btn-info">契作追蹤</router-link>
     </div>
-    <router-view></router-view>
+    <router-view class="router_view"></router-view>
 </template>
 
 <script>
@@ -26,9 +27,14 @@ export default {
 .router_content {
     display: flex;
     justify-content: start;
+    margin-bottom: 50px;
 
     .btn {
         margin: 0 10px;
     }
+}
+
+.router_view{
+    padding: 10px;
 }
 </style>

@@ -13,6 +13,7 @@ import CategoryManage from '@/views/CategoryManage.vue'
 import ContractManage from '@/views/ContractManage.vue'
 /*---*/import addLand from '@/components/contractManage/addLand.vue';
 /*---*/import addFarmer from '@/components/contractManage/addFarmer.vue';
+/*---*/import addContract from '@/components/contractManage/addContract.vue';
 /*---*/import delContract from '@/components/contractManage/delContract.vue';
 /*---*/import modContract from '@/components/contractManage/modContract.vue';
 /*---*/import trackContract from '@/components/contractManage/trackContract.vue';
@@ -50,6 +51,10 @@ const router = createRouter({
         {
           path: 'addFarmer',
           component: addFarmer,
+        },
+        {
+          path: 'addContract',
+          component: addContract,
         },
         {
           path: 'delContract',

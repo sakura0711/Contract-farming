@@ -5,9 +5,10 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
-<style lang="scss">
-    
-</style>
+<script setup>
+
+</script>
+<style lang="scss"></style>
