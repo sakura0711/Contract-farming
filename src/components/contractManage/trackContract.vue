@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        this is delContract page.
+        this is trackContract page.
     </div>
 </template>
 
