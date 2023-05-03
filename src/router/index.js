@@ -20,6 +20,8 @@ import ContractManage from '@/views/ContractManage.vue'
 
 // # info manage Page ------------------------------------
 import InfoManage from '@/views/InfoManage.vue'
+/*---*/import farmerManage from '@/components/infoManage/farmerManage.vue'
+/*---*/import landManage from '@/components/infoManage/landManage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,7 +39,17 @@ const router = createRouter({
     { // 資料管理
       path: '/infoManage',
       name: 'InfoManage',
-      component: InfoManage
+      component: InfoManage,
+      children: [
+        {
+          path: 'farmerManage',
+          component: farmerManage,
+        },
+        {
+          path: 'landManage',
+          component: landManage,
+        },
+      ],
     },
     { // 契約管理
       path: '/contractManage',
@@ -84,21 +96,6 @@ router.afterEach((to) => {
   const navbar = document.querySelector('.navbar-collapse')
   navbar.classList.remove('show')
 })
-
-// fixed : 垃圾 GPT :<
-// // ERROR 只有 NavBar 成功刷新，RouterView 無法刷新
-// // 重新整理時，導向固定頁面(HomeView)
-// router.beforeEach((to, from, next) => {
-//   // 檢查是否是重新整理頁面
-//   if (to.path === from.path) {
-//     // 將路由導向到固定路徑
-//     router.replace({ path: '/' })
-//   } else {
-//     // 繼續前往原始路徑
-//     next();
-//   }
-// });
-
 
 // 默認導出值
 export default router

@@ -17,3 +17,16 @@ a {
     text-decoration: none;
     color: $black;
 }
+
+@media (max-width: 1000px) {
+
+    // override col style 
+    div[class^='col-sm'] {
+        width: 100vw;
+        margin: 10px 0;
+    }
+
+    div[class^='container'] {
+        padding: 0;
+    }
+}
