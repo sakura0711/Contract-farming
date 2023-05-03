@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <form>
-            <h4>契作主頁新增</h4>
+            <h4>新增契作</h4>
             <hr>
             <div class="row">
                 <div class="col-sm-4">
